@@ -1,0 +1,48 @@
+.social {
+  /* ul */
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 6px;
+    margin-left: -10px;
+    align-content: center;
+  }
+  /* a */
+  &__link {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-basis: calc((100% - 40px) / 4);
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #afb1b8;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+  }
+  /* a hover focus */
+  &__link:hover,
+  &__link:focus {
+    background-color: var(--selected-color);
+    color: var(--hallway-text-color);
+  }
+  &__link_footer {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-basis: calc ((100% - 40) / 4);
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--hallway-text-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+  }
+}

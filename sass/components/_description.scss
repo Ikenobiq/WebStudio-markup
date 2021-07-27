@@ -1,0 +1,45 @@
+.description {
+  padding: 30px 30px;
+  border: 0px solid;
+  border-radius: 4px;
+  &__heading {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 3%;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+  }
+  &__paragraph {
+    color: var(--paragraph-text-color);
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 0.5px;
+  }
+}
+
+.portfolio__description {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+}
+.portfolio__heading_description {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  text-align: left;
+  vertical-align: top;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+.portfolio__paragraph_description {
+  color: var(--paragraph-text-color);
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: left;
+  vertical-align: top;
+  letter-spacing: 0.5px;
+}

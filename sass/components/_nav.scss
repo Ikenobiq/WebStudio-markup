@@ -1,0 +1,27 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--basic-background-color) ff;
+  &__list {
+    display: flex;
+    flex-direction: row;
+    padding-top: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+  }
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  &__link {
+    letter-spacing: 0.3px;
+    color: #212121;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: var(--selected-color);
+  }
+}
