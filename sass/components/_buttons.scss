@@ -104,6 +104,7 @@
   margin-bottom: 50px;
   list-style: none;
 }
+
 @media screen and (max-width: 767px) {
   .button {
     font-family: roboto;
@@ -161,8 +162,8 @@
   }
   .modal__button_mobile-menu {
     position: absolute;
-    top: 7px;
-    right: 8px;
+    top: 13px;
+    right: 13px;
     width: 30px;
     height: 30px;
     display: flex;
@@ -178,5 +179,23 @@
   .modal__button_mobile-menu:hover,
   .modal__button_mobile-menu:focus {
     fill: var(--selected-color);
+  }
+  .button_portfolio {
+    background-color: var(--team-background-color);
+    color: var(--basic-text-color);
+  }
+  .portfolio__button-item {
+    margin-right: 9px;
+  }
+  .portfolio__button-item:last-child {
+    margin-right: 0px;
+  }
+  .portfolio__button-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    list-style: none;
   }
 }
