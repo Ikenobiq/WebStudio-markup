@@ -44,25 +44,26 @@
     }
   }
 }
-
-// .logo {
-//   font-family: raleway;
-//   font-weight: 700;
-//   font-size: 26px;
-//   line-height: 1.192;
-//   color: #000000;
-//   text-decoration: none;
-//   letter-spacing: 0.5px;
-//   &_header {
-//     padding: 24px 0px 25px 0px;
-//     margin-right: 93px;
-//   }
-//   &-span {
-//     color: var(--selected-color);
-//   }
-//   &_footer {
-//     color: var(--hallway-text-color);
-//     display: inline-block;
-//     margin-bottom: 20px;
-//   }
-// }
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-family: raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    color: #000000;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    &_header {
+      padding: 24px 0px 25px 0px;
+      margin-right: 93px;
+    }
+    &-span {
+      color: var(--selected-color);
+    }
+    &_footer {
+      color: var(--hallway-text-color);
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  }
+}
