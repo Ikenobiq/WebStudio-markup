@@ -25,6 +25,7 @@
       color: #212121;
     }
     &__message {
+      min-height: 120px;
       margin-top: 4px;
       display: flex;
       padding: 12px 16px;
@@ -47,7 +48,7 @@
       letter-spacing: 0.03em;
     }
     &__policy-label::before {
-      display: block;
+      display: inline-block;
       content: "";
       width: 18px;
       height: 18px;
@@ -146,6 +147,7 @@
     }
   }
 }
+
 @media screen and (min-width: 1200px) {
   .modal {
     position: absolute;

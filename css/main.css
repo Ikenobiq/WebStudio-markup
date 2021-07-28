@@ -626,6 +626,7 @@ img {
     color: #212121;
   }
   .modal__message {
+    min-height: 120px;
     margin-top: 4px;
     display: flex;
     padding: 12px 16px;
@@ -648,7 +649,7 @@ img {
     letter-spacing: 0.03em;
   }
   .modal__policy-label::before {
-    display: block;
+    display: inline-block;
     content: "";
     width: 18px;
     height: 18px;
