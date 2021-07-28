@@ -1,29 +1,62 @@
-.command {
-  background-color: var(--team-background-color);
-  &__main-heading {
-    font-size: 36px;
-    line-height: 1.166;
-    text-align: center;
-    vertical-align: top;
-    letter-spacing: 0.6px;
-    margin-bottom: 50px;
-  }
-  &__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style: none;
-    margin-left: -30px;
-    margin-top: -30px;
-    padding: 0;
-  }
-  &__item {
-    background-color: var(--basic-background-color);
-    margin-left: 30px;
-    margin-top: 30px;
-    flex-basis: calc((100% - 120px) / 4);
-    border-radius: 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
+@media screen and (max-width: 767px) {
+  .command {
+    background-color: var(--team-background-color);
+    &__main-heading {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 1.17;
+      text-align: center;
+      vertical-align: top;
+      letter-spacing: 0.03em;
+      margin-bottom: 30px;
+    }
+    &__list {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      list-style: none;
+      padding: 0;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--basic-background-color);
+      border-radius: 4px;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
+
+// .command {
+//   background-color: var(--team-background-color);
+//   &__main-heading {
+//     font-size: 36px;
+//     line-height: 1.166;
+//     text-align: center;
+//     vertical-align: top;
+//     letter-spacing: 0.6px;
+//     margin-bottom: 50px;
+//   }
+//   &__list {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     list-style: none;
+//     margin-left: -30px;
+//     margin-top: -30px;
+//     padding: 0;
+//   }
+//   &__item {
+//     background-color: var(--basic-background-color);
+//     margin-left: 30px;
+//     margin-top: 30px;
+//     flex-basis: calc((100% - 120px) / 4);
+//     border-radius: 4px;
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//       0px 2px 1px rgba(0, 0, 0, 0.2);
+//   }
+// }

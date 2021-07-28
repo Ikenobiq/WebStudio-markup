@@ -1,60 +1,120 @@
-.advantages {
-  padding-bottom: 47px;
-  &__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0px;
-    margin-left: -30px;
-    margin-top: -30px;
-    list-style: none;
-  }
-  &__list-item {
-    width: 270px;
-    margin-left: 30px;
-    margin-top: 30px;
-    flex-basis: calc((100% - 120px) / 4);
-  }
+@media screen and (max-width: 767px) {
+  .advantages {
+    &__list {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      list-style: none;
+    }
+    &__list-item:not(:first-child) {
+      max-width: 450px;
+      margin-top: 30px;
+    }
 
-  &__heading {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.142;
-    vertical-align: top;
-    letter-spacing: 3%;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 10px;
-  }
-  &__paragraph {
-    color: var(--paragraph-text-color);
-    font-size: 14px;
-    line-height: 1.714;
-    text-align: left;
-    vertical-align: top;
-    letter-spacing: 0.5px;
-  }
-  &__icon {
-    display: block;
-    height: 120px;
-    margin-bottom: 30px;
-    content: "";
-    background-repeat: no-repeat;
-    background-color: #f5f4fa;
-    background-position: center;
-    background-size: 70px;
-  }
+    &__heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.142;
+      vertical-align: top;
+      letter-spacing: 3%;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 10px;
+    }
+    &__paragraph {
+      color: var(--paragraph-text-color);
+      font-size: 14px;
+      line-height: 1.714;
+      text-align: left;
+      vertical-align: top;
+      letter-spacing: 0.03em;
+    }
+    &__icon {
+      display: block;
+      height: 120px;
+      margin-bottom: 30px;
+      content: "";
+      background-repeat: no-repeat;
+      background-color: #f5f4fa;
+      background-position: center;
+      background-size: 70px;
+    }
 
-  .antenna {
-    background-image: url(../images/antenna.svg);
-  }
-  .clock {
-    background-image: url(../images/clock.svg);
-  }
-  .diagram {
-    background-image: url(../images/diagram.svg);
-  }
-  .astronaut {
-    background-image: url(../images/astronaut.svg);
+    .antenna {
+      background-image: url(../images/antenna.svg);
+    }
+    .clock {
+      background-image: url(../images/clock.svg);
+    }
+    .diagram {
+      background-image: url(../images/diagram.svg);
+    }
+    .astronaut {
+      background-image: url(../images/astronaut.svg);
+    }
   }
 }
+
+// .advantages {
+//   padding-bottom: 47px;
+//   &__list {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     padding: 0px;
+//     margin-left: -30px;
+//     margin-top: -30px;
+//     list-style: none;
+//   }
+//   &__list-item {
+//     width: 270px;
+//     margin-left: 30px;
+//     margin-top: 30px;
+//     flex-basis: calc((100% - 120px) / 4);
+//   }
+
+//   &__heading {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.142;
+//     vertical-align: top;
+//     letter-spacing: 3%;
+//     text-transform: uppercase;
+//     letter-spacing: 0.5px;
+//     margin-bottom: 10px;
+//   }
+//   &__paragraph {
+//     color: var(--paragraph-text-color);
+//     font-size: 14px;
+//     line-height: 1.714;
+//     text-align: left;
+//     vertical-align: top;
+//     letter-spacing: 0.5px;
+//   }
+//   &__icon {
+//     display: block;
+//     height: 120px;
+//     margin-bottom: 30px;
+//     content: "";
+//     background-repeat: no-repeat;
+//     background-color: #f5f4fa;
+//     background-position: center;
+//     background-size: 70px;
+//   }
+
+//   .antenna {
+//     background-image: url(../images/antenna.svg);
+//   }
+//   .clock {
+//     background-image: url(../images/clock.svg);
+//   }
+//   .diagram {
+//     background-image: url(../images/diagram.svg);
+//   }
+//   .astronaut {
+//     background-image: url(../images/astronaut.svg);
+//   }
+// }
