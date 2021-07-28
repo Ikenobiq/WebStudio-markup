@@ -55,6 +55,18 @@
       border-radius: 4px;
       cursor: pointer;
       margin-right: 8px;
+      flex-shrink: 0;
+    }
+    &__policy-label::before:focus {
+      outline: none;
+      border-color: var(--selected-color);
+    }
+    &__checkbox:checked + &__policy-label::before {
+      background-image: url(../images/check.svg);
+      background-repeat: no-repeat;
+    }
+    &__policy_link {
+      color: rgba(33, 150, 243, 1);
     }
 
     /* FORM */
@@ -132,17 +144,6 @@
       align-items: center;
       margin-top: 20px;
     }
-  }
-  &__policy-label::before:focus {
-    outline: none;
-    border-color: var(--selected-color);
-  }
-  &__checkbox:checked + &__policy-label::before {
-    background-image: url(../images/check.svg);
-    background-repeat: no-repeat;
-  }
-  &__policy_link {
-    color: rgba(33, 150, 243, 1);
   }
 }
 @media screen and (min-width: 1200px) {

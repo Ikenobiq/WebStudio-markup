@@ -656,6 +656,18 @@ img {
     border-radius: 4px;
     cursor: pointer;
     margin-right: 8px;
+    flex-shrink: 0;
+  }
+  .modal__policy-label::before:focus {
+    outline: none;
+    border-color: var(--selected-color);
+  }
+  .modal__checkbox:checked + .modal__policy-label::before {
+    background-image: url(../images/check.svg);
+    background-repeat: no-repeat;
+  }
+  .modal__policy_link {
+    color: #2196f3;
   }
   .modal__form {
     display: flex;
@@ -722,17 +734,6 @@ img {
     flex-direction: row;
     align-items: center;
     margin-top: 20px;
-  }
-  __policy-label::before:focus {
-    outline: none;
-    border-color: var(--selected-color);
-  }
-  __checkbox:checked + __policy-label::before {
-    background-image: url(../images/check.svg);
-    background-repeat: no-repeat;
-  }
-  __policy_link {
-    color: #2196f3;
   }
 }
 
