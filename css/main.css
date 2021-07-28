@@ -756,6 +756,15 @@ img {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .modal__policy-label {
+    display: block;
+    font-size: 12px;
+    line-height: 1.66;
+    letter-spacing: 0.03em;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     position: absolute;
@@ -976,8 +985,10 @@ img {
     display: none;
   }
   .header__container {
+    width: 100%;
+    max-width: 480px;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
   }
   .header .burger-btn {

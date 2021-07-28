@@ -69,8 +69,10 @@
       display: none;
     }
     &__container {
+      width: 100%;
+      max-width: 480px;
       display: flex;
-      align-items: center;
+      flex-direction: row;
       justify-content: space-between;
     }
     .burger-btn {
