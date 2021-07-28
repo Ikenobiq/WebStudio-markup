@@ -5,10 +5,10 @@
   &__list {
     display: flex;
     flex-direction: row;
-    padding-top: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.142;
+    letter-spacing: 0.02em;
   }
   &__item:not(:last-child) {
     margin-right: 50px;
@@ -32,7 +32,6 @@
       display: none;
     }
   }
-
   .nav__list_mobile-menu {
     display: flex;
     flex-direction: column;
@@ -55,4 +54,6 @@
   .nav__link_mobile-menu:focus {
     color: var(--selected-color);
   }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
 }

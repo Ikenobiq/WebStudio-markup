@@ -2,6 +2,18 @@
   .client {
     margin-left: auto;
     margin-right: auto;
+    &__heading {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 1.17;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: var(--basic-text-color);
+      margin-bottom: 30px;
+    }
     &__list {
       display: flex;
       flex-direction: row;
@@ -38,6 +50,18 @@
 .client {
   margin-left: auto;
   margin-right: auto;
+  &__heading {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--basic-text-color);
+    margin-bottom: 30px;
+  }
   &__list {
     display: flex;
     flex-direction: row;

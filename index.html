@@ -18,21 +18,15 @@
         <div class="header__container container">
             <a class="logo logo_header" href="./index.html"><span class="logo-span">Web</span>Studio</a>
             <nav class="nav">
-                
                 <ul class="nav__list list">
                     <li class="nav__item"><a class="nav__link link studio" href="./index.html">Студия</a></li>
                     <li class="nav__item"><a class="nav__link link" href="./portfolio.html">Портфолио</a></li>
                     <li class="nav__item"><a class="nav__link link" href="./">Контакты</a></li>
                 </ul>
-                
             </nav>
-            <button class="burger-btn" data-menu-open>
-                <svg class="burger-btn__icon">
-                    <use href="./images/symboldefs.svg#icon-burger"></use>
-                </svg>
             <div class="header-contact">
                 <a class="header-contact__link link" href="mailto:info@devstudio.com">
-                    <svg class="header-contact__icon" width="16" height="12"> 
+                    <svg class="header-contact__icon" width="16" height="12">
                         <use href="./images/symboldefs.svg#icon-mail"></use>
                     </svg>info@devstudio.com</a>
                 <a class="header-contact__link header-contact__link__tel link " href="tel:+38_096_111_11_11">
@@ -40,6 +34,10 @@
                         <use href="./images/symboldefs.svg#icon-smartphone"></use>
                     </svg>+38 096 111 11 11 </a>
             </div>
+            <button class="burger-btn" data-menu-open>
+                <svg class="burger-btn__icon">
+                    <use href="./images/symboldefs.svg#icon-burger"></use>
+                </svg>   
         </div>
         <div class="mobile-menu" data-menu>
             <div class="container mobile-menu__container">
@@ -143,7 +141,17 @@
                 <h2 class="command__main-heading">Наша команда</h2>
                 <ul class="command__list">
                     <li class="command__item">
-                        <img src="./images/images/team/mobile/product-desinger.jpg" alt="Игорь Демьяненко фото">
+                        <picture>
+                            <source srcset="./images/images/team/desctop/product-desinger.webp 1x, ./images/images/team/desctop/product-desinger@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/images/team/desctop/product-desinger.jpg 1x, ./images/images/team/desctop/product-desinger@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/images/team/tablet/product-desinger.webp 1x, ./images/images/team/tablet/product-desinger@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/images/team/tablet/product-desinger.jpg 1x, ./images/images/team/tablet/product-desinger@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <img class="command__img" src="./images/images/team/mobile/product-desinger.jpg" alt="Игорь Демьяненко фото">
+                        </picture>
                         <div class="description">
                             <h3 class="description__heading">Игорь Демьяненко</h3>
                             <p class="description__paragraph">Product Designer</p>
@@ -180,7 +188,21 @@
                         </div>
                     </li>
                     <li class="command__item">
-                        <img src="./images/images/team/mobile/frontend-developer.jpg" alt="Ольга Репина фото">
+                        <picture>
+                            <source
+                                srcset="./images/images/team/desctop/frontend-developer.webp 1x, ./images/images/team/desctop/frontend-developer@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source
+                                srcset="./images/images/team/desctop/frontend-developer.jpg 1x, ./images/images/team/desctop/frontend-developer@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/images/team/tablet/frontend-developer.webp 1x, ./images/images/team/tablet/frontend-developer@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp">
+                            <source
+                                srcset="./images/images/team/tablet/frontend-developer.jpg 1x, ./images/images/team/tablet/frontend-developer@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <img class="command__img" src="./images/images/team/mobile/frontend-developer.jpg" alt="Ольга Репина фото">
+                        </picture>
                         <div class="description">
                             <h3 class="description__heading">Ольга Репина</h3>
                             <p class="description__paragraph">Frontend Developer</p>
@@ -219,7 +241,21 @@
                         </div>
                     </li>
                     <li class="command__item">
-                        <img src="./images/images/team/mobile/marketing.jpg" alt="Николай Тарасов фото">
+                        <picture>
+                            <source
+                                srcset="./images/images/team/desctop/marketing.webp 1x, ./images/images/team/desctop/marketing@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source
+                                srcset="./images/images/team/desctop/marketing.jpg 1x, ./images/images/team/desctop/marketing@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/images/team/tablet/marketing.webp 1x, ./images/images/team/tablet/marketing@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp">
+                            <source
+                                srcset="./images/images/team/tablet/marketing.jpg 1x, ./images/images/team/tablet/marketing@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <img class="command__img" src="./images/images/team/mobile/marketing.jpg" alt="Николай Тарасов фото">
+                        </picture>
                         <div class="description">
                             <h3 class="description__heading">Николай Тарасов</h3>
                             <p class="description__paragraph">Marketing</p>
@@ -256,7 +292,17 @@
                         </div>
                     </li>
                     <li class="command__item">
-                        <img src="./images/images/team/mobile/ui-desinger.jpg" alt="Михаил Ермаков фото">
+                        <picture>
+                            <source srcset="./images/images/team/desctop/ui-desinger.webp 1x, ./images/images/team/desctop/ui-desinger@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/images/team/desctop/ui-desinger.jpg 1x, ./images/images/team/desctop/ui-desinger@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/images/team/tablet/ui-desinger.webp 1x, ./images/images/team/tablet/ui-desinger@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/images/team/tablet/ui-desinger.jpg 1x, ./images/images/team/tablet/ui-desinger@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <img class="command__img" src="./images/images/team/mobile/ui-desinger.jpg" alt="Михаил Ермаков фото">
+                        </picture>
                         <div class="description">
                             <h3 class="description__heading">Михаил Ермаков</h3>
                             <p class="description__paragraph">UI Designer</p>
@@ -298,6 +344,7 @@
         <!--our clients-->
         <section class="section">
             <div class="client container">
+                <h2 class="client__heading">Постоянные клиенты</h2>
                 <ul class="client__list list">
                     <li class="client__item">
                         <a class="client__link link" href="/">
