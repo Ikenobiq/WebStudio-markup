@@ -42,6 +42,7 @@
       position: relative;
       padding-top: 48px;
       padding-left: 26px;
+      padding-bottom: 48px;
     }
     &.is-open {
       opacity: 1;
@@ -84,7 +85,8 @@
     flex-direction: row;
     flex-shrink: 1;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-left: -10px;
   }
   .mobile-social-list__item {
     &:not(:last-child) {

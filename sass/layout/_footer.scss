@@ -46,7 +46,7 @@
     }
 
     &__email {
-      max-width: 358px;
+      width: 100%;
       height: 50px;
       padding: 15px 16px;
       background-color: var(--hallway-background-color);
@@ -146,7 +146,7 @@
     }
 
     &__email {
-      width: 358px;
+      width: 450px;
       height: 50px;
       padding: 15px 16px;
       background-color: var(--hallway-background-color);
